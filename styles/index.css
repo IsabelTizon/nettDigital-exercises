@@ -1,7 +1,50 @@
-body {
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Folder Fonts */
+
+@font-face {
+	font-family: "Didot-Bold";
+	src: url(../resources/fonts/Didot-Bold.otf);
+}
+* {
+	margin: 0;
 	padding: 0;
-	margin: 0 220px;
+}
+/* Elementos líquidos */
+img,
+video {
+	max-width: 100%;
+}
+body {
 	background-color: rgb(251, 222, 184);
+	font-family: Montserrat, sans-serif;
+}
+
+header {
+	/* Añadimos tb el background-color por si no cargara la página*/
+	background-color: rgb(85, 0, 4);
+	background-image: linear-gradient(
+		to bottom,
+		rgb(85, 0, 4),
+		rgb(30, 0, 1)
+	);
+	padding: 15px 10%;
+}
+main {
+	width: 80%;
+	margin: 50px auto;
+	max-width: 1728px;
+}
+footer {
+	/* Añadimos tb el background-color por si no cargara la página */
+	background-color: rgb(85, 0, 4);
+	background-image: linear-gradient(
+		to top,
+		rgb(85, 0, 4),
+		rgb(30, 0, 1)
+	);
+	padding: 15px 10%;
 }
 
 .flex-direction-row {
@@ -10,12 +53,28 @@ body {
 	justify-content: space-between;
 }
 
-.header {
-	background-color: rgb(85, 0, 4);
-	padding: 20px 20px 10px 20px;
-}
-
 .fa-search,
-.menu-font {
+.menu-font,
+.white-text {
 	color: #ffffff;
+}
+nav {
+	margin-top: 20px;
+}
+a {
+	text-decoration: none;
+}
+nav a:hover {
+	color: yellow;
+}
+nav a.actual {
+	color: rgb(238, 218, 162);
+}
+h1 {
+	margin: 20px 0;
+	font-family: "Didot negrita", serif;
+}
+p {
+	margin: 20px 0;
+	font-family: Didot-negrita;
 }
